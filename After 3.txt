@@ -1,0 +1,6 @@
+🌐 Live Endpoints
+Frontend (Chat UI):
+🔗 https://lemon-pond-070926c03.6.azurestaticapps.net/
+
+Backend (API):
+🔗 https://webapi-jsaibuildathon.azurewebsites.net/

@@ -10,7 +10,7 @@ const modelName = "Llama-4-Maverick-17B-128E-Instruct-FP8";
 
 // Function to resize and encode image in PNG format
 async function encodeImage(imagePath) {
-    const resizedBuffer = await sharp(imagePath)
+    const resizedBuffer = await sharp(imagePath)    
         .resize(200, 150) // Reduce dimensions
         .png({ quality: 30 }) // Convert to PNG for better compatibility
         .toBuffer();

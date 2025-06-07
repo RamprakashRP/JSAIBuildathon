@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
   const client = new ModelClient(
-  process.env.AZURE_INFERENCE_SDK_ENDPOINT ?? "https://rampr-mbkvv9bo-eastus2.services.ai.azure.com/models", new AzureKeyCredential(process.env.AZURE_INFERENCE_SDK_KEY ?? "EGGDtXsW6iGerhFLzDiO4ScJuR0PXcxzosZqeHJlbzheYnjvQfHbJQQJ99BFACHYHv6XJ3w3AAAAACOGj86W"));
+  process.env.AZURE_INFERENCE_SDK_ENDPOINT ?? "https://jsaibuildathon.services.ai.azure.com/", new AzureKeyCredential(process.env.AZURE_INFERENCE_SDK_KEY ?? "30qiZeJcqE6ZOHdiEwm7o6VHtnH8b4oMukGy9idWurMYCOyKZ34VJQQJ99BFAC77bzfXJ3w3AAAAACOGggj2"));
 
 var messages = [
   { role: "system", content: "You are an helpful assistant" },
@@ -18,7 +18,7 @@ var response = await client.path("chat/completions").post({
     max_tokens: 4096,
       temperature: 1,
       top_p: 1,
-      model: "gpt-4o-mini",
+      model: "gpt-4o",
   },
 });
 
